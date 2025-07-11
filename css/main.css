@@ -401,8 +401,9 @@ form button:hover {
   100% { transform: rotate(360deg); }
 }
 /* ===== Mobile Styling for 425px screen width ===== */
-@media (max-width: 300px) {
+@media (max-width: 450px) {
   body {
+    
     background-colour:#000000
     margin: 0;
     padding: 16px;
