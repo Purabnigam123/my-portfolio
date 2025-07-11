@@ -400,66 +400,73 @@ form button:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-/* ===== Mobile styles ===== */
-@media (max-width: 768px) {
+/* ===== Mobile Styling for 425px screen width ===== */
+@media (max-width: 425px) {
   body {
-    padding: 20px;
+    margin: 0;
+    padding: 16px;
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
     text-align: center;
   }
 
-  header, .main-section, footer {
+  header, footer, .main-section {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
-  header img,
-  .main-section img,
-  footer img {
+  img {
     max-width: 100%;
     height: auto;
-  }
-
-  .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 
   h1, h2, h3 {
-    font-size: 1.5em;
+    font-size: 1.4rem;
     margin: 10px 0;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1rem;
+    line-height: 1.5;
     margin: 10px 0;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    align-items: center;
   }
 
-  .button, button, a.button {
+  a, button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
     width: 100%;
+    max-width: 300px;
     box-sizing: border-box;
   }
 
   .image-container, .logo-container {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
   }
 
-  .image-container img, .logo-container img {
-    max-width: 80%;
-    margin: 10px auto;
+  .image-container img,
+  .logo-container img {
+    width: 90%;
+    max-width: 320px;
   }
 }
 
