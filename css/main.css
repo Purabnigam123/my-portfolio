@@ -403,14 +403,9 @@ form button:hover {
 /* ===== Mobile Styling for 425px screen width ===== */
 @media (max-width: 450px) {
   body {
-    
-    background-colour:#000000
-    margin: 0;
-    padding: 16px;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f8f8;
-    text-align: center;
+  background-color: #000000;
+  color: white;
+  font-family: "poppins", sans-serif;
   }
 
   header, footer, .main-section {
