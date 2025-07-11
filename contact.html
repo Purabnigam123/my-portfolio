@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Purab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script src="https://kit.fontawesome.com/b88c952f1e.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <div id="loader-wrapper">
+  <div class="spinner"></div>
+</div>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="/html/index.html"
+            ><img src="/images/Visual Studio Code Logo.png" height="70px"
+          /></a>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="/html/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/html/about.html"><i class="fa-solid fa-circle-user"></i> About</a></li>
+            <li><a href="/html/project.html"><i class="fa-solid fa-window-restore"></i> Project</a></li>
+            <li><a href="/html/contact.html"><i class="fa-solid fa-address-book"></i> Contact Me</a></li>
+            <li><a href="/html/resume.html"><i class="fa-solid fa-file"></i> Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="heading">Get in <br>
+    <span class="touch">&nbsp Touch</span></div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("lswlEMDangU1fi17Z");
+      })();
+    </script>
+
+    <!-- Contact Form -->
+    <!-- Contact Section -->
+<div class="contact-wrapper">
+  <div id="form-container">
+    <form id="contact-form">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="from_name" required /><br /><br />
+
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="from_email" required /><br /><br />
+
+      <label for="message">Message</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  
+</div>
+
+
+    <div class="line">
+      Your Feedback Is <span class="imp">&nbspImportant&nbsp</span> to me
+    </div>
+
+    <div class="footer">
+      <div class="leftfooter">
+        Designed and Developed by Purab Nigam <br /><br />Copyright © 2025 PN
+      </div>
+      <div class="rightfooter">
+        <a href="https://www.linkedin.com/in/purab-nigam-48a31326b/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Purabnigam123" target="_blank"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a href="https://www.instagram.com/purabnigam?igsh=Z2s3bHQycnM4ZXB4" target="_blank"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+        <a
+          href="https://x.com/Purab421620?t=FB8wl2Sd0Wko9vyM51Uj7A&s=09"
+          target="_blank"
+          ><i class="fa-brands fa-square-x-twitter"></i
+        ></a>
+      </div>
+    </div>
+    
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs
+            .sendForm("purabnigam2005@gmail.com", "template_gel0awd", this)
+            .then(
+              function () {
+                document.getElementById("form-container").innerHTML =
+                  "<p>Message sent successfully!</p>";
+              },
+              function (error) {
+                alert("Failed to send message.\n" + JSON.stringify(error));
+              }
+            );
+        });
+    </script>
+    <script>
+  window.addEventListener("load", function () {
+    const loader = document.getElementById("loader-wrapper");
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.5s ease";
+    setTimeout(() => loader.style.display = "none", 500);
+  });
+</script>
+  </body>
+</html>
