@@ -400,3 +400,66 @@ form button:hover {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+/* ===== Mobile styles ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  header, .main-section, footer {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  header img,
+  .main-section img,
+  footer img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button, button, a.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image-container, .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .image-container img, .logo-container img {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+}
+
