@@ -403,6 +403,7 @@ form button:hover {
 /* ===== Mobile Styling for 425px screen width ===== */
 @media (max-width: 425px) {
   body {
+    background-colour:#000000
     margin: 0;
     padding: 16px;
     font-size: 16px;
