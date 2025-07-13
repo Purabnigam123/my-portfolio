@@ -441,7 +441,11 @@ form button:hover {
     height: auto;
     text-align: center;
   }
-
+ .rightsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   nav .left,
   nav .right {
     margin: 10px 0;
