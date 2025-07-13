@@ -534,11 +534,8 @@ form button:hover {
   nav {
     flex-direction: column;
     padding: 20px 0;
-    height: 125px;
+    height: auto;
     text-align: center;
-  }
-  nav .right {
-    margin-top: 20px;
   }
 
   .download,
