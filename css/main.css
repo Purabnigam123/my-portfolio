@@ -171,9 +171,9 @@ nav ul li a:hover {
   border: none;}
 
 .secondsection {
-  box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.189);
+  box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.112);
   margin: 0 0 40px 0;
-  background-color: rgba(255, 255, 255, 0.189);
+  background-color: rgba(255, 255, 255, 0.112);
 }
 
 .logo {
@@ -355,12 +355,7 @@ form button:hover {
     flex-direction: column-reverse;
     gap: 30px;
   }
-      nav {
-        flex-direction: column;
-        padding: 20px 0;
-        height: 125px;
-        text-align: center;
-    }
+
   .firstsection > div {
     width: 90%;
   }
@@ -392,7 +387,7 @@ form button:hover {
   
   nav {
     flex-direction: column;
-    height: 125px;
+    height: auto;
     padding: 20px;
   }
 
@@ -535,6 +530,15 @@ form button:hover {
   }
   #bgimage{
     align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    padding: 20px 0;
+    height: 125px;
+    text-align: center;
+  }
+  nav .right {
+    margin-top: 20px;
   }
 
   .download,
