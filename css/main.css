@@ -355,7 +355,12 @@ form button:hover {
     flex-direction: column-reverse;
     gap: 30px;
   }
-
+      nav {
+        flex-direction: column;
+        padding: 20px 0;
+        height: 125px;
+        text-align: center;
+    }
   .firstsection > div {
     width: 90%;
   }
