@@ -387,7 +387,7 @@ form button:hover {
   
   nav {
     flex-direction: column;
-    height: auto;
+    height: 125px;
     padding: 20px;
   }
 
