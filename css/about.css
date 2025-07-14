@@ -81,7 +81,7 @@ main {
 }
 
 .heading1 {
-  width: 100%;
+  width: auto;
   margin: 0 200px;
   color: white;
   font-size: 70px;
