@@ -531,12 +531,7 @@ form button:hover {
   #bgimage{
     align-items: center;
   }
-  nav {
-    flex-direction: column;
-    padding: 20px 0;
-    height: auto;
-    text-align: center;
-  }
+  
 
   .download,
   .aboutbutton {
@@ -610,20 +605,48 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+
   .hamburger {
     display: block;
+    font-size: 30px;
+    color: aqua;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    display: none;
     background-color: rgba(0, 255, 255, 0.1);
     border-top: 1px solid aqua;
+    border-radius: 8px;
+    padding: 20px 0;
+    width: 250px;
+    position: absolute;
+    top: 110px; /* Appears right under hamburger */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
   }
 
   nav ul.active {
     display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav .left,
+  nav .right {
+    margin: 10px 0;
   }
 }
