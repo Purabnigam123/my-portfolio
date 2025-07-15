@@ -1,69 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Purab's Project</title>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purab Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/project.css" />
+    <script src="https://kit.fontawesome.com/b88c952f1e.js" crossorigin="anonymous"></script>
+  </head>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <body>
+    <div id="loader-wrapper"><div class="spinner"></div></div>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/project.css" />
+    <header>
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        <img src="/images/Visual Studio Code Logo.png" height="70px" />
+      </a>
+    </div>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/b88c952f1e.js" crossorigin="anonymous"></script>
-</head>
+    <div class="right">
+      <div class="hamburger-wrapper">
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
 
-  <div id="loader-wrapper">
-  <div class="spinner"></div>
-</div>
-<body>
-
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <div class="left">
-        <a href="/index.html">
-          <img src="/images/Visual Studio Code Logo.png" height="70px" alt="Logo" />
-        </a>
-      </div>
-      <div class="right">
-        <ul>
-          <li><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-          <li><a href="/about.html"><i class="fa-solid fa-circle-user"></i> About</a></li>
-          <li><a href="/project.html"><i class="fa-solid fa-window-restore"></i> Project</a></li>
-          <li><a href="/contact.html"><i class="fa-solid fa-address-book"></i> Contact Me</a></li>
-          <li><a href="/resume.html"><i class="fa-solid fa-file"></i> Resume</a></li>
+        <ul id="mobile-menu">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-circle-user"></i> About</a></li>
+          <li><a href="project.html"><i class="fa-solid fa-window-restore"></i> Project</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-address-book"></i> Contact Me</a></li>
+          <li><a href="resume.html"><i class="fa-solid fa-file"></i> Resume</a></li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   </header>
-  <main>
- <div class="coming"><img src="/images/Adobe Express - file (1).png" height="300px"></div>
-  </main>
 
-  <div class="footer">
-    <div class="leftfooter">
-      Designed and Developed by Purab Nigam<br><br>
-      Copyright © 2025 PN
+  <main>
+      <img src="/images/Adobe Express - file (1).png" alt="Coming Soon" class="projectsoon" />
     </div>
-    <div class="rightfooter">
-      <a href="https://www.linkedin.com/in/purab-nigam-48a31326b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/Purabnigam123" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-      <a href="https://www.instagram.com/purabnigam" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-      <a href="https://x.com/Purab421620" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+    
+  </main>
+<div class="footer">
+      <div class="leftfooter">
+        Designed and Developed by Purab Nigam<br><br>
+        Copyright © 2025 PN
+      </div>
+      <div class="rightfooter">
+        <a href="https://www.linkedin.com/in/purab-nigam-48a31326b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Purabnigam123" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/purabnigam" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://x.com/Purab421620" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
     </div>
-  </div>
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loader-wrapper");
-    loader.style.opacity = "0";
-    loader.style.transition = "opacity 0.5s ease";
-    setTimeout(() => loader.style.display = "none", 500);
+    </footer>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer","Web Developer", "AI/ML Developer", "Figma UI/UX Developer", "MERN Stack Developer"],
+      typeSpeed: 80,
+      loop: true
+    });
+  </script>
+
+  <!-- Loader -->
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader-wrapper");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+      setTimeout(() => loader.style.display = "none", 500);
+    });
+  </script>
+
+  <!-- EmailJS -->
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
   });
 </script>
+
 </body>
 </html>
